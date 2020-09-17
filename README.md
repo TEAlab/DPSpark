@@ -1,3 +1,14 @@
+# DPSPark: Dynamic Program Solver for Apache Spark
+
+**Authors:** 
+Mohammad Javanmard <mjavanmard@cs.stonybrook.edu>,
+Zafar Ahmad <zafahmad@cs.stonybrook.edu>,
+Jaroslaw Zola <jzola@buffalo.edu>,
+Louisnoel Pouchet <Louis-Noel.Pouchet@colostate.edu>,
+Rezaul Chowdhury <rezaul@cs.stonybrook.edu>,
+Robert Harrison <robert.harrison@stonybrook.edu>
+
+
 ## Environment Setup
 
 Use Anaconda3 for virtual environment and install the following packages in your environment: Anaconda3, Python 2.7, Spark 2.2.0, NumPy, Numba, Cython
@@ -33,6 +44,6 @@ Repeat the above steps for `gaussian_r-way` and `paf_r-way`.
 * `-baseSize` base case of R-way shared memory implementation where the R-way recursive solver switches to iterative computation
 * `-o` output folder
 
-Sample command to run the program:
+##### Example invocation
 
 `spark-submit --master spark://$SPARK_MASTER_IP:$SPARK_MASTER_PORT --num-executors 16 --executor-cores 31 --executor-memory 160g --driver-memory 160g --conf spark.driver.maxResultSize=2g --py-files DPSpark-master.zip --files floyd.so DPSpark.py -isInMem n -problemSize 32768 -blockingFactor 128 -isCached n -numPartitions 992 -partitioner ph -problemType fw-apsp -isRec n -rShared 2 -baseSize 64 -d $BLOCKS_DIR -n 16 -i inp_dp_table -o out_dp_table &> output.out`
