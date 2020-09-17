@@ -8,8 +8,11 @@ Use Anaconda3 for virtual environment and install the following packages in your
 Run the following commands to generate required shared libraries:
 
 `cd floyd_r-way`
+
 `make`
+
 `cp *.so ../DPSparkImplementations/`
+
 `cd ..`
 
 Repeat the above steps for `gaussian_r-way` and `paf_r-way`.
