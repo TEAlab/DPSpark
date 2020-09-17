@@ -24,7 +24,7 @@ Repeat the above steps for `gaussian_r-way` and `paf_r-way`.
 * `-isInMem` solver type (use `y` for In memory and `n` for Collect Broadcast)
 * `-problemSize` number of vertices in the input graph
 * `-blockingFactor` block size for adjacency matrix decomposition
-* `-isCached` `y` for caching is on and `n` for turning it off
+* `-isCached` caching type (`y` for caching is on and `n` for turning it off)
 * `-numPartitions` number of Spark RDD partitions to store adjacency matrix
 * `-partitioner` type of partitioner
 * `-problemType` type of the problem (use `fw-apsp` for Floyd-Warshall All Pair Shortest Paths, `ge` for Gaussian elimination, and `paf` for Protein Accordion Folding). Please note that based of the type of the problem the shared obect need to be passed according in `--file` argument (`floyd.so` for `fw-apsp`, `gaussian.so` for `ge`, and `protien.so` for `paf`)
