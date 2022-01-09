@@ -1,4 +1,4 @@
-# DPSPark: Dynamic Program Solver for Apache Spark
+# DPSPark: Efficient Execution of Dynamic Programming Algorithms on Apache Spark
 
 **Authors:** 
 Mohammad Javanmard <mjavanmard@cs.stonybrook.edu>,
@@ -8,6 +8,11 @@ Louisnoel Pouchet <Louis-Noel.Pouchet@colostate.edu>,
 Rezaul Chowdhury <rezaul@cs.stonybrook.edu>,
 Robert Harrison <robert.harrison@stonybrook.edu>
 
+This project is the implementation of the paper [Efficient Execution of Dynamic Programming Algorithms on Apache Spark](https://ieeexplore.ieee.org/abstract/document/9229617), which has been accepted in the [IEEE-CLUSTER 2020](https://clustercomp.org/2020/) conference
+
+To cite `DPSPark`, please refer to this repository and our paper:
+
+Mohammad Mahdi Javanmard, Zafar Ahmad, Jaroslaw Zola, Louis-Noël Pouchet, Rezaul Chowdhury, Robert Harrison, "Efficient Execution of Dynamic Programming Algorithms on Apache Spark", 2020 IEEE International Conference on Cluster Computing (CLUSTER). https://ieeexplore.ieee.org/abstract/document/9229617
 
 ## Environment Setup
 
